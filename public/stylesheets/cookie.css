@@ -3,17 +3,36 @@
     --main-color : red;
 }
 
+.cookie__body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    height: 100%;
+
+    margin-top: 100px;
+}
+
 .button-wrapper {
     display: flex;
     flex-direction: row;
 }
 
-button:disabled {
-    cursor: default;
-}
-
 #cookie {
     outline: none;
+}
+
+button#cookie {
+    appearance: none;
+    background: none;
+    border: transparent;
+    cursor: pointer;
+    font-family: 'Noto Serif', serif;
+}
+
+button#cookie:disabled {
+    cursor: default;
 }
 
 #flip {
@@ -47,9 +66,9 @@ button:disabled {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 140vmax;
-    position: relative;
+    height: 40vmin;
     width: 100%;
+    position: relative;
 
     padding: 10px 0 10px 0;
 }
@@ -107,7 +126,7 @@ button:disabled {
     height: 40vmin;
     width: 40vmin;
     position: absolute;
-    top: 30px;
+    top: 0;
     z-index: 5;
 }
 
