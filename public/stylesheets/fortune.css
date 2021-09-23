@@ -1,0 +1,19 @@
+.fortune__body {
+    margin-top: 100px;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.fortune__body > div {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 40px;
+}
+
+
+.fortune__body img {
+    width: 100px;
+    height: 100px;
+}

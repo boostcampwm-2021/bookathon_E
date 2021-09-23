@@ -1,0 +1,23 @@
+extends layout    
+
+block content
+    .cookie__body
+        .title
+            h1 오늘의 운세
+        .sub-title
+            small 쿠키를 클릭 해주세요
+        #fortuneCookie
+            button(type="button")#cookie
+                .cookie
+                .cookie
+                .paper-wrapper
+                    .paper
+                        .fortune #{contents}
+                        .numbers
+            button(type="button")#flip.front.small
+        .button-wrapper
+            form(action="/" method="get")
+                button#return(type="submit") 돌아가기
+
+    script(src='/javascripts/zodiac.js')
+    
