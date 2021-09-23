@@ -1,3 +1,8 @@
+:root {
+    --cookie-color : red;
+    --main-color : red;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -14,7 +19,7 @@ body {
     align-items: center;
     display: flex;
     justify-content: center;
-    color: navy;
+    color: var(--main-color);
     flex-direction: column;
     font-family: 'Noto Serif', serif;
     margin: 0;
@@ -100,7 +105,7 @@ small, .small {
 }
 
 #new {
-    background-color: navy;
+    background-color: var(--main-color);
     border: 1px solid transparent;
     border-radius: 0.25rem;
     color: white;
@@ -112,12 +117,13 @@ small, .small {
 
 #new:hover {
     background-color: white;
-    border-color: navy;
-    color: navy;
+    border-color: var(--main-color);
+    color: var(--main-color);
+}
 }
 
 .cookie {
-    background-image: radial-gradient(white 4.3%, transparent 4.4%), radial-gradient(100% 200% at top right, goldenrod, rgba(218, 165, 32, 0) 50%), radial-gradient(ellipse 100% 300% at 100% 40%, lemonchiffon, rgba(255, 250, 205, 0) 30%), radial-gradient(circle at top left, saddlebrown, rgba(139, 69, 19, 0) 40%), linear-gradient(to bottom, goldenrod 43%, rgba(218, 165, 32, 0) 50%), radial-gradient(circle at center left, rgba(255, 250, 205, 0) 37%, rgba(255, 250, 205, .5) 41.9%, transparent 42%), radial-gradient(circle at 55% 47%, goldenrod 3%, transparent 7%), radial-gradient(circle at center right, rgba(139, 69, 19, 0) 37%, rgba(139, 69, 19, .5) 41.9%, transparent 42%), radial-gradient(circle at center left, goldenrod 41.9%, transparent 42%), radial-gradient(circle at center right, goldenrod 41.9%, transparent 42%), linear-gradient(to bottom, transparent 49.9%, white 50%), radial-gradient(rgba(255, 250, 205, 0.5) 10%, rgba(255, 250, 205, 0) 15%), linear-gradient(to bottom, goldenrod 49.9%, transparent 50%);
+    background-image: radial-gradient(white 4.3%, transparent 4.4%), radial-gradient(100% 200% at top right, var(--cookie-color), rgba(218, 165, 32, 0) 50%), radial-gradient(ellipse 100% 300% at 100% 40%, lemonchiffon, rgba(255, 250, 205, 0) 30%), radial-gradient(circle at top left, saddlebrown, rgba(139, 69, 19, 0) 40%), linear-gradient(to bottom, var(--cookie-color) 43%, rgba(218, 165, 32, 0) 50%), radial-gradient(circle at center left, rgba(255, 250, 205, 0) 37%, rgba(255, 250, 205, .5) 41.9%, transparent 42%), radial-gradient(circle at 55% 47%, var(--cookie-color) 3%, transparent 7%), radial-gradient(circle at center right, rgba(139, 69, 19, 0) 37%, rgba(139, 69, 19, .5) 41.9%, transparent 42%), radial-gradient(circle at center left, var(--cookie-color) 41.9%, transparent 42%), radial-gradient(circle at center right, var(--cookie-color) 41.9%, transparent 42%), linear-gradient(to bottom, transparent 49.9%, white 50%), radial-gradient(rgba(255, 250, 205, 0.5) 10%, rgba(255, 250, 205, 0) 15%), linear-gradient(to bottom, var(--cookie-color) 49.9%, transparent 50%);
     border-radius: 100%;
     height: 40vmin;
     width: 40vmin;
@@ -254,7 +260,7 @@ small, .small {
    }
     75% {
         margin-left: -5vmin;
-        background-image: radial-gradient(white 4.3%, transparent 4.4%), radial-gradient(100% 200% at top right, goldenrod, rgba(218, 165, 32, 0) 50%), radial-gradient(ellipse 100% 300% at 100% 40%, lemonchiffon, rgba(255, 250, 205, 0) 30%), radial-gradient(circle at top left, saddlebrown, rgba(139, 69, 19, 0) 40%), linear-gradient(to bottom, goldenrod 43%, rgba(218, 165, 32, 0) 50%), radial-gradient(circle at center left, rgba(255, 250, 205, 0) 37%, rgba(255, 250, 205, .5) 41.9%, transparent 42%), radial-gradient(circle at 55% 47%, goldenrod 3%, transparent 7%), radial-gradient(circle at center right, rgba(139, 69, 19, 0) 37%, rgba(139, 69, 19, .5) 41.9%, transparent 42%), radial-gradient(circle at center left, goldenrod 41.9%, transparent 42%), radial-gradient(circle at center right, goldenrod 41.9%, transparent 42%), linear-gradient(to bottom, transparent 49.9%, white 50%), radial-gradient(rgba(255, 250, 205, 0.5) 10%, rgba(255, 250, 205, 0) 15%), linear-gradient(to bottom, goldenrod 49.9%, transparent 50%);
+        background-image: radial-gradient(white 4.3%, transparent 4.4%), radial-gradient(100% 200% at top right, var(--cookie-color), rgba(218, 165, 32, 0) 50%), radial-gradient(ellipse 100% 300% at 100% 40%, lemonchiffon, rgba(255, 250, 205, 0) 30%), radial-gradient(circle at top left, saddlebrown, rgba(139, 69, 19, 0) 40%), linear-gradient(to bottom, var(--cookie-color) 43%, rgba(218, 165, 32, 0) 50%), radial-gradient(circle at center left, rgba(255, 250, 205, 0) 37%, rgba(255, 250, 205, .5) 41.9%, transparent 42%), radial-gradient(circle at 55% 47%, var(--cookie-color) 3%, transparent 7%), radial-gradient(circle at center right, rgba(139, 69, 19, 0) 37%, rgba(139, 69, 19, .5) 41.9%, transparent 42%), radial-gradient(circle at center left, var(--cookie-color) 41.9%, transparent 42%), radial-gradient(circle at center right, var(--cookie-color) 41.9%, transparent 42%), linear-gradient(to bottom, transparent 49.9%, white 50%), radial-gradient(rgba(255, 250, 205, 0.5) 10%, rgba(255, 250, 205, 0) 15%), linear-gradient(to bottom, var(--cookie-color) 49.9%, transparent 50%);
         border-radius: 100%;
         height: 40vmin;
         width: 40vmin;
@@ -265,7 +271,7 @@ small, .small {
         transform: rotate(10deg);
    }
     100% {
-        background-image: linear-gradient(45deg, transparent 46%, white 46.1%), linear-gradient(45deg, goldenrod 39%, transparent 39.1%), radial-gradient(circle at 14% 86%, rgba(0, 0, 0, 0.25) 35%, transparent 35%), radial-gradient(circle at 10% 90%, goldenrod 40%, transparent 40%), linear-gradient(45deg, goldenrod 40%, transparent 40.1%);
+        background-image: linear-gradient(45deg, transparent 46%, white 46.1%), linear-gradient(45deg, var(--cookie-color) 39%, transparent 39.1%), radial-gradient(circle at 14% 86%, rgba(0, 0, 0, 0.25) 35%, transparent 35%), radial-gradient(circle at 10% 90%, var(--cookie-color) 40%, transparent 40%), linear-gradient(45deg, var(--cookie-color) 40%, transparent 40.1%);
         border-radius: 100% 0;
         clip-path: none;
         margin-left: -15vmin;
@@ -275,7 +281,7 @@ small, .small {
 
 @keyframes left-clear {
     from {
-        background-image: linear-gradient(45deg, transparent 46%, white 46.1%), linear-gradient(45deg, goldenrod 39%, transparent 39.1%), radial-gradient(circle at 14% 86%, rgba(0, 0, 0, 0.25) 35%, transparent 35%), radial-gradient(circle at 10% 90%, goldenrod 40%, transparent 40%), linear-gradient(45deg, goldenrod 40%, transparent 40.1%);
+        background-image: linear-gradient(45deg, transparent 46%, white 46.1%), linear-gradient(45deg, var(--cookie-color) 39%, transparent 39.1%), radial-gradient(circle at 14% 86%, rgba(0, 0, 0, 0.25) 35%, transparent 35%), radial-gradient(circle at 10% 90%, var(--cookie-color) 40%, transparent 40%), linear-gradient(45deg, var(--cookie-color) 40%, transparent 40.1%);
         border-radius: 100% 0;
         clip-path: none;
         margin-left: -15vmin;
@@ -295,7 +301,7 @@ small, .small {
    }
     75% {
         margin-right: -5vmin;
-        background-image: radial-gradient(white 4.3%, transparent 4.4%), radial-gradient(100% 200% at top right, goldenrod, rgba(218, 165, 32, 0) 50%), radial-gradient(ellipse 100% 300% at 100% 40%, lemonchiffon, rgba(255, 250, 205, 0) 30%), radial-gradient(circle at top left, saddlebrown, rgba(139, 69, 19, 0) 40%), linear-gradient(to bottom, goldenrod 43%, rgba(218, 165, 32, 0) 50%), radial-gradient(circle at center left, rgba(255, 250, 205, 0) 37%, rgba(255, 250, 205, .5) 41.9%, transparent 42%), radial-gradient(circle at 55% 47%, goldenrod 3%, transparent 7%), radial-gradient(circle at center right, rgba(139, 69, 19, 0) 37%, rgba(139, 69, 19, .5) 41.9%, transparent 42%), radial-gradient(circle at center left, goldenrod 41.9%, transparent 42%), radial-gradient(circle at center right, goldenrod 41.9%, transparent 42%), linear-gradient(to bottom, transparent 49.9%, white 50%), radial-gradient(rgba(255, 250, 205, 0.5) 10%, rgba(255, 250, 205, 0) 15%), linear-gradient(to bottom, goldenrod 49.9%, transparent 50%);
+        background-image: radial-gradient(white 4.3%, transparent 4.4%), radial-gradient(100% 200% at top right, var(--cookie-color), rgba(218, 165, 32, 0) 50%), radial-gradient(ellipse 100% 300% at 100% 40%, lemonchiffon, rgba(255, 250, 205, 0) 30%), radial-gradient(circle at top left, saddlebrown, rgba(139, 69, 19, 0) 40%), linear-gradient(to bottom, var(--cookie-color) 43%, rgba(218, 165, 32, 0) 50%), radial-gradient(circle at center left, rgba(255, 250, 205, 0) 37%, rgba(255, 250, 205, .5) 41.9%, transparent 42%), radial-gradient(circle at 55% 47%, var(--cookie-color) 3%, transparent 7%), radial-gradient(circle at center right, rgba(139, 69, 19, 0) 37%, rgba(139, 69, 19, .5) 41.9%, transparent 42%), radial-gradient(circle at center left, var(--cookie-color) 41.9%, transparent 42%), radial-gradient(circle at center right, var(--cookie-color) 41.9%, transparent 42%), linear-gradient(to bottom, transparent 49.9%, white 50%), radial-gradient(rgba(255, 250, 205, 0.5) 10%, rgba(255, 250, 205, 0) 15%), linear-gradient(to bottom, var(--cookie-color) 49.9%, transparent 50%);
         border-radius: 100%;
         height: 40vmin;
         width: 40vmin;
@@ -306,7 +312,7 @@ small, .small {
         transform: rotate(-10deg);
    }
     100% {
-        background-image: linear-gradient(-45deg, transparent 46%, white 46.1%), linear-gradient(-45deg, goldenrod 39%, transparent 39.1%), radial-gradient(circle at 86% 86%, rgba(0, 0, 0, 0.25) 35%, transparent 35%), radial-gradient(circle at 90% 90%, goldenrod 40%, transparent 40%), linear-gradient(-45deg, goldenrod 40%, transparent 40.1%);
+        background-image: linear-gradient(-45deg, transparent 46%, white 46.1%), linear-gradient(-45deg, var(--cookie-color) 39%, transparent 39.1%), radial-gradient(circle at 86% 86%, rgba(0, 0, 0, 0.25) 35%, transparent 35%), radial-gradient(circle at 90% 90%, var(--cookie-color) 40%, transparent 40%), linear-gradient(-45deg, var(--cookie-color) 40%, transparent 40.1%);
         border-radius: 0% 100%;
         clip-path: none;
         margin-right: -15vmin;
@@ -316,7 +322,7 @@ small, .small {
 
 @keyframes right-clear {
     from {
-        background-image: linear-gradient(-45deg, transparent 46%, white 46.1%), linear-gradient(-45deg, goldenrod 39%, transparent 39.1%), radial-gradient(circle at 86% 86%, rgba(0, 0, 0, 0.25) 35%, transparent 35%), radial-gradient(circle at 90% 90%, goldenrod 40%, transparent 40%), linear-gradient(-45deg, goldenrod 40%, transparent 40.1%);
+        background-image: linear-gradient(-45deg, transparent 46%, white 46.1%), linear-gradient(-45deg, var(--cookie-color) 39%, transparent 39.1%), radial-gradient(circle at 86% 86%, rgba(0, 0, 0, 0.25) 35%, transparent 35%), radial-gradient(circle at 90% 90%, var(--cookie-color) 40%, transparent 40%), linear-gradient(-45deg, var(--cookie-color) 40%, transparent 40.1%);
         border-radius: 0% 100%;
         clip-path: none;
         margin-right: -15vmin;
