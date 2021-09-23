@@ -1,5 +1,9 @@
+@font-face {
+  font-family: "swgi";
+  src: url("./font/aKoreanSWGI.ttf");
+}
+
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
