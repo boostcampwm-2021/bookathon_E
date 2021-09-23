@@ -1,1 +1,28 @@
+<<<<<<< HEAD
 extends layout
+=======
+extends layout 
+
+block content
+    .cookie__body
+        .title
+            h1 착한맛 쿠키
+        .sub-title
+            small 쿠키를 클릭 해주세요
+        #fortuneCookie
+            button(type="button")#cookie
+                .cookie
+                .cookie
+                .paper-wrapper
+                    .paper
+                        .fortune
+                        .numbers
+            button(type="button")#flip.front.small
+        .button-wrapper
+            button#new(type="button") 새로 뽑기
+            form(action="/" method="get")
+                button#return(type="submit") 돌아가기
+
+    script(src='javascripts/mild-cookie.js')
+    
+>>>>>>> 07879f7 ([FEAT] 순한맛 페이지 생성)
