@@ -20,10 +20,15 @@
     margin: 0;
 }
 
-.navbar__logo p{
+.navbar a{
+    text-decoration-line: none;
+}
+
+.navbar__logo a p{
     font-family: "nanumpen";
     font-size: 64px;
     font-weight: 500;
+    color: black;
     margin: auto;
     text-align: center;
     vertical-align: middle;
@@ -31,7 +36,7 @@
     margin-left: 70px;
 }
 
-.navbar__logo p:hover {
+.navbar__logo a p:hover {
     cursor: pointer;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     transition: text-shadow 0.5s;
@@ -45,38 +50,38 @@
     left: 100px;
 }
 
-.navbar__items p{
+.navbar__items a p{
     font-family: "swgi";
     font-size: 25px;
     font-weight: 500;
     height:30px;
     margin: auto;
+    line-height: 100px;
     margin-left:30px;
 }
 
-.navbar__items p:first-child {
+.navbar__items .nav__fortune {
     left: 53px;
     color: #964545;
-    
 }
 
-.navbar__items p:nth-child(2){
+.navbar__items .nav__mild{
     left: 246px;
     color: #4E5BCC;
 
 }
 
-.navbar__items p:nth-child(3){
+.navbar__items .nav__hot{
     left: 439px;
     color: #F23030;
 }
 
-.navbar__items p:nth-child(4){
+.navbar__items .nav__cooking{
     left: 632px;
     color: #B732D9;
 }
 
-.navbar__items p:hover{
+.navbar__items a p:hover{
     font-weight: 600;
     cursor: pointer;
 }
