@@ -1,41 +1,42 @@
 const OvenDB = require('../model/db.js');
+const express = require('express');
+const router = express.Router();
 
-const OvenController = {
-    insertOvenDB(type, contents) {
-        const doc = {type : type, contents : contents};
+router.get('/read/1', function(req, res, next) {
+    OvenDB.find({ type: 1 }, function (err, newDoc) {
+        res.json(newDoc);
+    });
+});
+
+router.get('/read/2', function(req, res, next) {
+    OvenDB.find({ type: 2 }, function (err, newDoc) {
+        res.json(newDoc);
+    });
+});
+
+router.get('/read-one-random/1', function(req, res, next) {
+    OvenDB.find({ type: 1 }, function (err, newDoc) {
+        const random = Math.floor(Math.random() * newDoc.length);
+        res.json(newDoc[random]);
+    });
+});
+
+router.get('/read-one-random/2', function(req, res, next) {
+    OvenDB.find({ type: 2 }, function (err, newDoc) {
+        const random = Math.floor(Math.random() * newDoc.length);
+        res.json(newDoc[random]);
+    });
+});
+
+router.post('/add', function(req, res, next) {
+    try {
+        const doc = {type : Number(req.query.type), contents : req.query.contents};
         OvenDB.insert(doc, function (err, newDoc) {
-            console.log(newDoc);
+            res.json({message: 'success'});
         });
-    },
-    countOvenDB() {
-        OvenDB.count({}, function (err, newDoc) {
-            console.log(newDoc);
-        });
-    },
-    findOvenDB(type) {
-        const doc = {type : type};
-        OvenDB.insert(doc, function (err, newDoc) {
-            console.log(newDoc);
-        });
-    },
-    updateOvenDB(type, beforeContents, afterContents) {
-        const beforeDoc = {type : type, contents: beforeContents};
-        const afterDoc = {type : type, contents: afterContents};
-        OvenDB.update(beforeDoc, afterDoc, {}, function (err, newDoc) {
-            console.log(newDoc);
-        });
-    },
-    removeOvenDB(type, contents) {
-        const doc = {type : type, contents : contents};
-        OvenDB.remove(doc, {}, function (err, newDoc) {
-            console.log(newDoc);
-        });
-    },
-    removeAllOvenDB() {
-        OvenDB.remove({}, {multi: true}, function (err, newDoc) {
-            console.log(newDoc);
-        });
+    } catch (e) {
+        res.json({message: 'fail'});
     }
-}
+});
 
-module.exports = OvenController;
+module.exports = router;
