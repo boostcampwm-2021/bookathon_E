@@ -30,7 +30,7 @@ router.get('/read-one-random/2', function(req, res, next) {
 
 router.post('/add', function(req, res, next) {
     try {
-        const doc = {type : Number(req.query.type), contents : req.query.contents};
+        const doc = {type : Number(req.body.type), contents : req.body.contents};
         OvenDB.insert(doc, function (err, newDoc) {
             res.json({message: 'success'});
         });
