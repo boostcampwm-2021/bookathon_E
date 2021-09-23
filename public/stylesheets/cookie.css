@@ -3,58 +3,13 @@
     --main-color : red;
 }
 
-* {
-    box-sizing: border-box;
-}
-
-html, body {
-    height: 100%;
-}
-
-html {
-    font-size: 3vmin;
-}
-
-body {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    color: var(--main-color);
-    flex-direction: column;
-    font-family: 'Noto Serif', serif;
-    margin: 0;
-    margin-top: -2rem;
-    overflow: hidden;
-}
-
 .button-wrapper {
     display: flex;
     flex-direction: row;
 }
 
-button {
-    appearance: none;
-    background: none;
-    border: transparent;
-    cursor: pointer;
-    font-family: 'Noto Serif', serif;
-}
-
 button:disabled {
     cursor: default;
-}
-
-h1 {
-    font-weight: normal;
-    margin: 0;
-}
-
-small, .small {
-    color: gray;
-    font-size: 0.67rem;
-    letter-spacing: 0.1em;
-    margin-bottom: 1em;
-    text-transform: uppercase;
 }
 
 #cookie {
