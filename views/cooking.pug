@@ -3,7 +3,7 @@ block css
     link(rel='stylesheet', href='/stylesheets/cooking.css')
 block content
     body.input-form__font-size
-        div.input-form.flex.relative
+        div.input-form.flex.relative.margin6
             div
                 label.input-form__check
                     input(name='mild', type='checkbox', value='1', checked=true)
@@ -18,7 +18,7 @@ block content
                 
                 button(type='submit').input-form__submit 쿠키 굽기
 
-        div.flex.input-form__result__modal.hidden
+        div.flex.input-form__result__modal.hidden.margin7
             img(src='images/cookie.png', alt='cookie').input-form__result__cookie
             a(href='./').input-form__result__button 돌아가기 
     script(type='module' src='/javascripts/cooking.js')

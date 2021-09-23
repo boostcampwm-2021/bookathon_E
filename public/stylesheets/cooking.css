@@ -24,14 +24,19 @@ button{
     font-size: inherit;
 }
 
+.margin6{
+    margin-top: 6%;
+}
+.margin7{
+    margin-top: 7%;
+}
 .input-form__font-size{
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .input-form{
     width: 90%;
     height: 700px;
-    margin-top: 150px;
 }
 
 .input-form__check{
@@ -62,7 +67,6 @@ button{
 }
 
 .input-form__result__modal{
-    margin-top: 150px;
     width: 90%;
     height: 700px;
     position: absolute;
