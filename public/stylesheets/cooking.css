@@ -5,6 +5,12 @@
     align-items: center;
 }
 
+.flex__horizon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .relative{
     position: relative;
 }
@@ -85,7 +91,7 @@ button{
 }
 
 .input-form__result__button{
-    width: 345px;
+    width: 320px;
     height: 75px;
     border-radius: 50px;
     position: absolute;
@@ -94,6 +100,11 @@ button{
     text-decoration: none;
     color: inherit;
     text-align: center;
+}
+
+.input-form__result__back{
+    width: 400px;
+    height: 100px;
 }
 
 .hidden{
