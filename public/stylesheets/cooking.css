@@ -1,0 +1,111 @@
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.relative{
+    position: relative;
+}
+
+textarea{
+    font-size: inherit;
+    border-radius: 20px;
+    border: none;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+button{
+    border: none;
+    font-size: inherit;
+}
+
+.input-form__font-size{
+    font-size: 40px;
+}
+
+.input-form{
+    width: 90%;
+    height: 700px;
+}
+
+.input-form__check{
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 170px;
+    height: 30px;
+}
+
+.input-form__input{
+    width: 1000px;
+    height: 500px;
+    background-color: #ECE8E4;
+    border-radius: 50px;
+    margin-top: 30px;
+}
+
+.input-form__submit{
+    width: 345px;
+    height: 75px;
+    border-radius: 50px;
+    margin-top: 30px;
+}
+
+.input-form__text{
+    width: 650px;
+    height: 300px;
+}
+
+.input-form__result__modal{
+    width: 90%;
+    height: 700px;
+    position: absolute;
+    top: 0px;
+    background-color: #FFFFFF;
+    background-image: url('../images/oven.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.input-form__result__cookie{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+.input-form__result__button{
+    width: 345px;
+    height: 75px;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 60px;
+}
+
+.hidden{
+    display: none;
+}
+
+.animation{
+    animation-duration: 3s;
+    animation-name: cookie;
+}
+
+@keyframes cookie {
+    0% {
+        left: 0%;
+        opacity: 1;
+    }
+    50%{
+        left: 40%;
+        opacity: 1;
+    }
+    100% {
+        left: 45%;
+        opacity: 0;
+    }
+}
