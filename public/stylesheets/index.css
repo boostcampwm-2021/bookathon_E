@@ -1,0 +1,111 @@
+@font-face {
+    font-family: "brrn";
+    src: url("../fonts/aBRRNOR.ttf");
+}
+
+@font-face {
+    font-family: "cookierun";
+    src: url("../fonts/cookierun.ttf");
+}
+
+.main {
+    position: relative;
+    top: -30px;
+}
+
+.main__mild {
+    position: absolute;
+    width: 379px;
+    height: 710px;
+    left: 92px;
+    top: 202px;
+
+    background: #033E8C;
+    border-radius: 50px;
+}
+
+.main__mild p {
+    font-family: "cookierun";
+    font-size: 64px;
+    color: white;
+    
+    position: relative;
+    text-align: center;
+}
+
+.main__mild img {
+    position: absolute;
+    top: 307px;
+    left: -23px;
+}
+
+
+
+.main__hot {
+    position: absolute;
+    width: 359px;
+    height: 710px;
+    left: 555px;
+    top: 207px;
+
+    background: #BF0426;
+    border-radius: 50px;
+}
+
+.main__hot p {
+    font-family: "cookierun";
+    font-size: 64px;
+    color: white;
+    
+    position: relative;
+    text-align: center;
+}
+
+.main__hot img {
+    position: absolute;
+    top: 305px;
+    left: -28px;
+    width: 415px;
+}
+
+
+.main__cooking {
+    position: absolute;
+    width: 362px;
+    height: 337px;
+    left: 1000px;
+    top: 207px;
+
+    background: #EFEFEF;
+    border-radius: 50px;
+}
+
+.main__cooking p {
+    font-family: "cookierun";
+    font-size: 64px;
+    color: black;
+    
+    text-align: center;
+    line-height: 220px;
+}
+
+
+.main__fortune {
+    position: absolute;
+    width: 363px;
+    height: 335px;
+    left: 999px;
+    top: 582px;
+
+    background: #FEE38B;
+    border-radius: 50px;
+}
+
+.main__fortune p {
+    font-family: "brrn";
+    font-size: 56px;
+    color: black;
+    
+    text-align: center;
+    line-height: 220px;
+}

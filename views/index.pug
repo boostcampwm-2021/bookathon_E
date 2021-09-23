@@ -1,1 +1,19 @@
 extends layout
+block css 
+  link(rel='stylesheet', href='/stylesheets/index.css')
+block content
+  .main
+    a(href=`./mild`)
+      .main__mild 
+        p 순한맛 쿠키
+        img(src='/images/mild-tray.png')
+    a(href=`./hot`)
+      .main__hot 
+        p 매운맛 쿠키
+        img(src='/images/hot-tray.png')
+    a(href=`./cooking`)
+      .main__cooking 
+        p 쿠키 굽기
+    a(href=`./fortune`)
+      .main__fortune
+        p 오늘의 운세
