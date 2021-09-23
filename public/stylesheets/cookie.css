@@ -1,0 +1,352 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    font-size: 3vmin;
+}
+
+body {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: navy;
+    flex-direction: column;
+    font-family: 'Noto Serif', serif;
+    margin: 0;
+    margin-top: -2rem;
+    overflow: hidden;
+}
+
+button {
+    appearance: none;
+    background: none;
+    border: transparent;
+    cursor: pointer;
+    font-family: 'Noto Serif', serif;
+}
+
+button:disabled {
+    cursor: default;
+}
+
+h1 {
+    font-weight: normal;
+    margin: 0;
+}
+
+small, .small {
+    color: gray;
+    font-size: 0.67rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+#cookie {
+    outline: none;
+}
+
+#flip {
+    bottom: 8vmin;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 125ms;
+    transition-delay: 375ms;
+}
+
+#flip.back::before {
+    content: 'Tap here to see front';
+}
+
+#flip.front::before {
+    content: 'Tap here to see back';
+}
+
+.clear.open #flip {
+    opacity: 0;
+    transition: 250ms;
+}
+
+.open #flip {
+    opacity: 1;
+    z-index: 5;
+}
+
+#fortuneCookie {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 40vmin;
+    position: relative;
+    width: 100%;
+}
+
+#fortuneCookie.clear:not(.open) {
+    animation: clear-cookie forwards 500ms;
+    z-index: -1;
+}
+
+#new {
+    background-color: navy;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    color: white;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    padding: 0.25rem;
+    transition: 250ms;
+}
+
+#new:hover {
+    background-color: white;
+    border-color: navy;
+    color: navy;
+}
+
+.cookie {
+    background-image: radial-gradient(white 4.3%, transparent 4.4%), radial-gradient(100% 200% at top right, goldenrod, rgba(218, 165, 32, 0) 50%), radial-gradient(ellipse 100% 300% at 100% 40%, lemonchiffon, rgba(255, 250, 205, 0) 30%), radial-gradient(circle at top left, saddlebrown, rgba(139, 69, 19, 0) 40%), linear-gradient(to bottom, goldenrod 43%, rgba(218, 165, 32, 0) 50%), radial-gradient(circle at center left, rgba(255, 250, 205, 0) 37%, rgba(255, 250, 205, .5) 41.9%, transparent 42%), radial-gradient(circle at 55% 47%, goldenrod 3%, transparent 7%), radial-gradient(circle at center right, rgba(139, 69, 19, 0) 37%, rgba(139, 69, 19, .5) 41.9%, transparent 42%), radial-gradient(circle at center left, goldenrod 41.9%, transparent 42%), radial-gradient(circle at center right, goldenrod 41.9%, transparent 42%), linear-gradient(to bottom, transparent 49.9%, white 50%), radial-gradient(rgba(255, 250, 205, 0.5) 10%, rgba(255, 250, 205, 0) 15%), linear-gradient(to bottom, goldenrod 49.9%, transparent 50%);
+    border-radius: 100%;
+    height: 40vmin;
+    width: 40vmin;
+    position: absolute;
+    top: 0;
+    z-index: 5;
+}
+
+.cookie:first-child {
+    clip-path: polygon(0% 0%, 50% 0%, 53% 5%, 49% 10%, 55% 15%, 47% 20%, 52% 30%, 46% 40%, 50% 45%, 50% 100%, 0% 100%);
+    left: calc(50% - 20vmin);
+}
+
+.clear.open .cookie:first-child {
+    animation: left-clear forwards 500ms;
+    z-index: -1;
+}
+
+.open .cookie:first-child {
+    animation: left-open forwards 500ms;
+}
+
+.cookie:nth-child(2) {
+    clip-path: polygon(100% 100%, 100% 0%, 50% 0%, calc(53% - 1px) 5%, calc(49% - 1px) 10%, calc(55% - 1px) 15%, calc(47% - 1px) 20%, calc(52% - 1px) 30%, calc(46% - 1px) 40%, 50% 45%, 50% 100%);
+    right: calc(50% - 20vmin);
+}
+
+.clear.open .cookie:nth-child(2) {
+    animation: right-clear forwards 500ms;
+    z-index: -1;
+}
+
+.open .cookie:nth-child(2) {
+    animation: right-open forwards 500ms;
+}
+
+.drop {
+    animation: drop forwards 500ms;
+    z-index: -1;
+}
+
+.paper {
+    color: navy;
+    flex-direction: column;
+    font-size: 2.25vmin;
+    left: 0;
+    line-height: 1;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    transform-origin: 100% 5vmin;
+    transform-style: preserve-3d;
+    transition: 300ms;
+    width: 0;
+    z-index: -1;
+}
+
+.paper-wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.paper-wrapper.flip .paper {
+    transform: rotateX(-180deg);
+}
+
+.paper .fortune, .paper .numbers {
+    opacity: 0;
+}
+
+.clear.open .paper-wrapper {
+    animation: clear-fortune forwards 500ms;
+}
+
+.open .paper {
+    animation: open-fortune forwards 500ms;
+}
+
+.open .paper-wrapper, .open .paper, .open .paper .fortune, .open .paper .numbers {
+    height: 10vmin;
+    width: 40vmin;
+}
+
+.open .paper .fortune, .open .paper .numbers {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    backface-visibility: hidden;
+    background-color: white;
+    left: 0;
+    opacity: 1;
+    overflow: hidden;
+    padding: 1.5vmin;
+    position: absolute;
+    top: 0;
+}
+
+.open .paper .fortune {
+    transition: opacity 125ms;
+    transition-delay: 375ms;
+}
+
+.open .paper .numbers {
+    transform: rotateX(180deg);
+}
+
+@keyframes clear-cookie {
+    from {
+        top: 0;
+        left: 0;
+   }
+    to {
+        top: 100vmin;
+        left: 100vmin;
+        transform: rotate(180deg);
+   }
+}
+
+@keyframes drop {
+    from {
+        top: -100vmin;
+   }
+    to {
+        top: 0;
+   }
+}
+
+@keyframes left-open {
+    25% {
+        margin-left: -5vmin;
+        transform: rotate(10deg);
+   }
+    75% {
+        margin-left: -5vmin;
+        background-image: radial-gradient(white 4.3%, transparent 4.4%), radial-gradient(100% 200% at top right, goldenrod, rgba(218, 165, 32, 0) 50%), radial-gradient(ellipse 100% 300% at 100% 40%, lemonchiffon, rgba(255, 250, 205, 0) 30%), radial-gradient(circle at top left, saddlebrown, rgba(139, 69, 19, 0) 40%), linear-gradient(to bottom, goldenrod 43%, rgba(218, 165, 32, 0) 50%), radial-gradient(circle at center left, rgba(255, 250, 205, 0) 37%, rgba(255, 250, 205, .5) 41.9%, transparent 42%), radial-gradient(circle at 55% 47%, goldenrod 3%, transparent 7%), radial-gradient(circle at center right, rgba(139, 69, 19, 0) 37%, rgba(139, 69, 19, .5) 41.9%, transparent 42%), radial-gradient(circle at center left, goldenrod 41.9%, transparent 42%), radial-gradient(circle at center right, goldenrod 41.9%, transparent 42%), linear-gradient(to bottom, transparent 49.9%, white 50%), radial-gradient(rgba(255, 250, 205, 0.5) 10%, rgba(255, 250, 205, 0) 15%), linear-gradient(to bottom, goldenrod 49.9%, transparent 50%);
+        border-radius: 100%;
+        height: 40vmin;
+        width: 40vmin;
+        position: absolute;
+        top: 0;
+        z-index: 5;
+        clip-path: polygon(0% 0%, 50% 0%, 53% 5%, 49% 10%, 55% 15%, 47% 20%, 52% 30%, 46% 40%, 50% 45%, 50% 100%, 0% 100%);
+        transform: rotate(10deg);
+   }
+    100% {
+        background-image: linear-gradient(45deg, transparent 46%, white 46.1%), linear-gradient(45deg, goldenrod 39%, transparent 39.1%), radial-gradient(circle at 14% 86%, rgba(0, 0, 0, 0.25) 35%, transparent 35%), radial-gradient(circle at 10% 90%, goldenrod 40%, transparent 40%), linear-gradient(45deg, goldenrod 40%, transparent 40.1%);
+        border-radius: 100% 0;
+        clip-path: none;
+        margin-left: -15vmin;
+        transform: rotate(45deg);
+   }
+}
+
+@keyframes left-clear {
+    from {
+        background-image: linear-gradient(45deg, transparent 46%, white 46.1%), linear-gradient(45deg, goldenrod 39%, transparent 39.1%), radial-gradient(circle at 14% 86%, rgba(0, 0, 0, 0.25) 35%, transparent 35%), radial-gradient(circle at 10% 90%, goldenrod 40%, transparent 40%), linear-gradient(45deg, goldenrod 40%, transparent 40.1%);
+        border-radius: 100% 0;
+        clip-path: none;
+        margin-left: -15vmin;
+        transform: rotate(45deg);
+   }
+    to {
+        left: -40vmin;
+        top: -40vmin;
+        transform: rotate(-45deg);
+   }
+}
+
+@keyframes right-open {
+    25% {
+        margin-right: -5vmin;
+        transform: rotate(-10deg);
+   }
+    75% {
+        margin-right: -5vmin;
+        background-image: radial-gradient(white 4.3%, transparent 4.4%), radial-gradient(100% 200% at top right, goldenrod, rgba(218, 165, 32, 0) 50%), radial-gradient(ellipse 100% 300% at 100% 40%, lemonchiffon, rgba(255, 250, 205, 0) 30%), radial-gradient(circle at top left, saddlebrown, rgba(139, 69, 19, 0) 40%), linear-gradient(to bottom, goldenrod 43%, rgba(218, 165, 32, 0) 50%), radial-gradient(circle at center left, rgba(255, 250, 205, 0) 37%, rgba(255, 250, 205, .5) 41.9%, transparent 42%), radial-gradient(circle at 55% 47%, goldenrod 3%, transparent 7%), radial-gradient(circle at center right, rgba(139, 69, 19, 0) 37%, rgba(139, 69, 19, .5) 41.9%, transparent 42%), radial-gradient(circle at center left, goldenrod 41.9%, transparent 42%), radial-gradient(circle at center right, goldenrod 41.9%, transparent 42%), linear-gradient(to bottom, transparent 49.9%, white 50%), radial-gradient(rgba(255, 250, 205, 0.5) 10%, rgba(255, 250, 205, 0) 15%), linear-gradient(to bottom, goldenrod 49.9%, transparent 50%);
+        border-radius: 100%;
+        height: 40vmin;
+        width: 40vmin;
+        position: absolute;
+        top: 0;
+        z-index: 5;
+        clip-path: polygon(100% 100%, 100% 0%, 50% 0%, calc(53% - 1px) 5%, calc(49% - 1px) 10%, calc(55% - 1px) 15%, calc(47% - 1px) 20%, calc(52% - 1px) 30%, calc(46% - 1px) 40%, 50% 45%, 50% 100%);
+        transform: rotate(-10deg);
+   }
+    100% {
+        background-image: linear-gradient(-45deg, transparent 46%, white 46.1%), linear-gradient(-45deg, goldenrod 39%, transparent 39.1%), radial-gradient(circle at 86% 86%, rgba(0, 0, 0, 0.25) 35%, transparent 35%), radial-gradient(circle at 90% 90%, goldenrod 40%, transparent 40%), linear-gradient(-45deg, goldenrod 40%, transparent 40.1%);
+        border-radius: 0% 100%;
+        clip-path: none;
+        margin-right: -15vmin;
+        transform: rotate(-45deg);
+   }
+}
+
+@keyframes right-clear {
+    from {
+        background-image: linear-gradient(-45deg, transparent 46%, white 46.1%), linear-gradient(-45deg, goldenrod 39%, transparent 39.1%), radial-gradient(circle at 86% 86%, rgba(0, 0, 0, 0.25) 35%, transparent 35%), radial-gradient(circle at 90% 90%, goldenrod 40%, transparent 40%), linear-gradient(-45deg, goldenrod 40%, transparent 40.1%);
+        border-radius: 0% 100%;
+        clip-path: none;
+        margin-right: -15vmin;
+        transform: rotate(-45deg);
+   }
+    to {
+        bottom: -40vmin;
+        right: -40vmin;
+        transform: rotate(30deg);
+   }
+}
+
+@keyframes clear-fortune {
+    from {
+        top: 0;
+        transform: translateZ(120deg);
+   }
+    to {
+        top: -100vh;
+        transform: rotate(90deg);
+   }
+}
+
+@keyframes open-fortune {
+    25% {
+        width: 10vmin;
+   }
+    75% {
+        box-shadow: none;
+        padding: 0;
+        width: 10vmin;
+        z-index: -1;
+   }
+    100% {
+        box-shadow: 0 1vmin 2vmin rgba(0, 0, 0, 0.125);
+        width: 40vmin;
+        z-index: 10;
+        transform: translateZ(90deg);
+   }
+}

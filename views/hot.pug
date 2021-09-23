@@ -1,0 +1,20 @@
+extends layout 
+
+block content
+    h1 매운맛 쿠키
+    small Tap on the cookie to open
+    #fortuneCookie
+        button(type="button")#cookie
+            .cookie
+            .cookie
+            .paper-wrapper
+                .paper
+                    .fortune
+                    .numbers
+        button(type="button")#flip.front.small
+    button#new(type="button") 새로 뽑기
+    form(action="/" method="get")
+        button#return(type="submit") 돌아가기
+
+    script(src='javascripts/cookie.js')
+    
