@@ -1,0 +1,23 @@
+html 
+    head 
+        link(rel='stylesheet', href='/stylesheets/cooking.css')
+    body.input-form__font-size
+        div.input-form.flex.relative
+            div
+                label.input-form__check
+                    input(name='mild', type='checkbox', value='1', checked=true)
+                    | 순한맛
+                label.input-form__check
+                    input(name='hot', type='checkbox', value='2')
+                    | 매운맛
+            
+            div.flex          
+                div.input-form__input.flex
+                    textarea(name="cookieContents", rows="5", cols="60").input-form__text
+                
+                button(type='submit').input-form__submit 쿠키 굽기
+
+        div.flex.input-form__result__modal.hidden
+            img(src='images/cookie.png', alt='cookie').input-form__result__cookie
+            a(href='./').input-form__result__button 돌아가기 
+    script(type='module' src='/javascripts/cooking.js')

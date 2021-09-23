@@ -2,7 +2,14 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    block css
+    link(rel='stylesheet', href='./stylesheets/style.css')
+    link(rel='stylesheet', href='./stylesheets/header.css')
     link(rel='stylesheet', href='/stylesheets/cookie.css')
+
   body
+    include ./header.pug
     block content
+    
+    script(src="./javascripts/header.js")
+    block script

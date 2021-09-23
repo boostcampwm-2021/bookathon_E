@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "nodemon ./bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -11,6 +11,20 @@
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
+    "nodemon": "^2.0.12",
     "pug": "2.0.0-beta11"
-  }
+  },
+  "description": "![img](https://img.shields.io/badge/Express--orange) ![project_start_date](https://img.shields.io/badge/Dedate%20Start%20Date-2021--09--23-informational.svg)",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boostcampwm-2021/bookathon_E.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/boostcampwm-2021/bookathon_E/issues"
+  },
+  "homepage": "https://github.com/boostcampwm-2021/bookathon_E#readme"
 }
