@@ -24,7 +24,7 @@ const createCookie = ()=>{
 }
 
 const sendCookie = async(type, contents)=>{
-    let response = await fetch('./create-cookie', {
+    let response = await fetch('./ovenapi/add', {
         method: 'post', 
         headers: {'Content-Type': 'application/json'}, 
         body: JSON.stringify({"type":type, "contents":contents})

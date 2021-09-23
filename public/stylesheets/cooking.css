@@ -84,6 +84,10 @@ button{
     border-radius: 50px;
     position: absolute;
     bottom: 60px;
+    background-color: #ECE8E4;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
 }
 
 .hidden{
@@ -93,6 +97,7 @@ button{
 .animation{
     animation-duration: 3s;
     animation-name: cookie;
+    opacity: 0;
 }
 
 @keyframes cookie {
