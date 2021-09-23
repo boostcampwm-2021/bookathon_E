@@ -27,6 +27,11 @@ body {
     overflow: hidden;
 }
 
+.button-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
 button {
     appearance: none;
     background: none;
@@ -87,9 +92,12 @@ small, .small {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 40vmin;
+    height: 140vmax;
     position: relative;
     width: 100%;
+
+    padding: 10px 0 10px 0;
+}
 
 #fortuneCookie:not(.open) {
     transform-origin: 50% 0%;
@@ -110,9 +118,9 @@ small, .small {
     border-radius: 0.25rem;
     color: white;
     font-size: 1rem;
-    margin-top: 0.5rem;
-    padding: 0.25rem;
     transition: 250ms;
+
+    margin: 0 1rem 0 1rem;
 }
 
 #new:hover {
@@ -120,6 +128,22 @@ small, .small {
     border-color: var(--main-color);
     color: var(--main-color);
 }
+
+#return {
+    background-color: grey;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    color: white;
+    font-size: 1rem;
+    transition: 250ms;
+
+    margin: 0 1rem 0 1rem;
+}
+
+#return:hover {
+    background-color: white;
+    border-color: grey;
+    color: grey;
 }
 
 .cookie {
@@ -128,7 +152,7 @@ small, .small {
     height: 40vmin;
     width: 40vmin;
     position: absolute;
-    top: 0;
+    top: 30px;
     z-index: 5;
 }
 
