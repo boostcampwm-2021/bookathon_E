@@ -38,6 +38,7 @@ button{
 }
 .input-form__font-size{
     font-size: 30px;
+    font: 14px, "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 .input-form{
@@ -53,7 +54,7 @@ button{
 }
 
 .input-form__input{
-    width: 1000px;
+    width: 900px;
     height: 500px;
     background-color: #ECE8E4;
     border-radius: 50px;
