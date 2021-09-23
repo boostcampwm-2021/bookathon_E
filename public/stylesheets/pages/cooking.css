@@ -38,7 +38,7 @@ button{
 }
 .input-form__font-size{
     font-size: 30px;
-    font: 14px, "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 .input-form{
@@ -77,9 +77,9 @@ button{
     width: 90%;
     height: 700px;
     position: absolute;
-    top: 0px;
+    top: 0;
     background-color: #FFFFFF;
-    background-image: url('../images/oven.jpg');
+    background-image: url('../../images/oven.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -120,7 +120,7 @@ button{
 
 @keyframes cookie {
     0% {
-        left: 0%;
+        left: 0;
         opacity: 1;
     }
     50%{

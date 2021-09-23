@@ -74,7 +74,7 @@ button#cookie:disabled {
 }
 
 #fortuneCookie:not(.open) {
-    transform-origin: 50% 0%;
+    transform-origin: 50% 0;
     animation-name: shake;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -311,7 +311,7 @@ button#cookie:disabled {
    }
     100% {
         background-image: linear-gradient(-45deg, transparent 46%, white 46.1%), linear-gradient(-45deg, var(--cookie-color) 39%, transparent 39.1%), radial-gradient(circle at 86% 86%, rgba(0, 0, 0, 0.25) 35%, transparent 35%), radial-gradient(circle at 90% 90%, var(--cookie-color) 40%, transparent 40%), linear-gradient(-45deg, var(--cookie-color) 40%, transparent 40.1%);
-        border-radius: 0% 100%;
+        border-radius: 0 100%;
         clip-path: none;
         margin-right: -15vmin;
         transform: rotate(-45deg);
@@ -321,7 +321,7 @@ button#cookie:disabled {
 @keyframes right-clear {
     from {
         background-image: linear-gradient(-45deg, transparent 46%, white 46.1%), linear-gradient(-45deg, var(--cookie-color) 39%, transparent 39.1%), radial-gradient(circle at 86% 86%, rgba(0, 0, 0, 0.25) 35%, transparent 35%), radial-gradient(circle at 90% 90%, var(--cookie-color) 40%, transparent 40%), linear-gradient(-45deg, var(--cookie-color) 40%, transparent 40.1%);
-        border-radius: 0% 100%;
+        border-radius: 0 100%;
         clip-path: none;
         margin-right: -15vmin;
         transform: rotate(-45deg);

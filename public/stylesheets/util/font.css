@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "swgi";
+    src: url("../../fonts/aKoreanSWGI.ttf");
+}
+
+@font-face {
+    font-family: "nanumpen";
+    src: url("../../fonts/nanumpen.ttf");
+}
+
+@font-face {
+    font-family: "brrn";
+    src: url("../../fonts/aBRRNOR.ttf");
+}
+
+@font-face {
+    font-family: "cookierun";
+    src: url("../../fonts/cookierun.ttf");
+}

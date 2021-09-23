@@ -1,7 +1,11 @@
-@font-face {
-  font-family: "swgi";
-  src: url("./font/aKoreanSWGI.ttf");
-}
+@import './util/reset.css';
+@import './util/font.css';
+@import './pages/cookie.css';
+@import './pages/cooking.css';
+@import './pages/fortune.css';
+@import './pages/header.css';
+@import './pages/cookie.css';
+@import './pages/index.css';
 
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;

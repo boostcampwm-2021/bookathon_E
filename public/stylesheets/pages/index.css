@@ -1,13 +1,3 @@
-@font-face {
-    font-family: "brrn";
-    src: url("../fonts/aBRRNOR.ttf");
-}
-
-@font-face {
-    font-family: "cookierun";
-    src: url("../fonts/cookierun.ttf");
-}
-
 .main {
     position: relative;
     top: -30px;
