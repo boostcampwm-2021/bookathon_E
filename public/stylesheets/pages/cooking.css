@@ -18,7 +18,7 @@
 textarea{
     font-size: inherit;
     border-radius: 20px;
-    border: none;
+    border: 20px;
 }
 
 textarea:focus{
@@ -53,6 +53,24 @@ button{
     height: 30px;
 }
 
+.input-form__check input[type="checkbox"] {
+    display:none;
+}
+
+input[type="checkbox"] + label span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin:-2px 19px 0 0;
+    vertical-align:middle;
+    background:url('../../images/chkbox-off.png') left top no-repeat;
+    cursor:pointer;
+}
+
+input[type="checkbox"]:checked + label span {
+    background:url('../../images/chkbox-on.png') top no-repeat;
+}
+
 .input-form__input{
     width: 900px;
     height: 500px;
@@ -69,15 +87,16 @@ button{
 }
 
 .input-form__text{
-    width: 650px;
-    height: 300px;
+    width: 750px;
+    height: 350px;
+    padding: 20px;
 }
 
 .input-form__result__modal{
     width: 90%;
     height: 700px;
     position: absolute;
-    top: 0;
+    top: 150px;
     background-color: #FFFFFF;
     background-image: url('../../images/oven.jpg');
     background-size: contain;

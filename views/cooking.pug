@@ -5,11 +5,15 @@ block content
         div.input-form.flex.relative.margin6
             div
                 label.input-form__check
-                    input(name='mild', type='checkbox', value='1', checked=true)
-                    | 순한맛
+                    input(name='mild', id='c1', type='checkbox', value='1', checked=true)
+                    label(for='c1') 
+                        span
+                        | 순한맛
                 label.input-form__check
-                    input(name='hot', type='checkbox', value='2')
-                    | 매운맛
+                    input(name='hot', id='c2', type='checkbox', value='2')
+                    label(for='c2')
+                        span
+                        | 매운맛
             
             div.flex          
                 div.input-form__input.flex
