@@ -102,6 +102,7 @@ input[type="checkbox"]:checked + label span {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    line-height: 80px;
 }
 
 .input-form__result__cookie{
