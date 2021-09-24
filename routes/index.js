@@ -32,9 +32,36 @@ router.get('/fortune/:zodiac', async function(req, res, next) {
 
   const zodiacNum = zodiacObj[zodiac];
   // 띠 별 운세를 가져옴
-  const contents = await crawling(zodiacNum);
+  let contents = await crawling(zodiacNum);
 
-  res.render('zodiac', { zodiac, contents })
+  const formattedContents = [];
+
+  while(true) {
+    let idx = contents.slice(10).search(/[0-9]{4}년생/);
+
+    if(idx === -1) break;
+
+    idx += 10;
+
+    const content = contents.slice(0, idx);
+    contents = contents.slice(idx);
+
+    formattedContents.push(content);
+  }
+  formattedContents.push(contents);
+ 
+  const content = formattedContents[0];
+
+  const contentInYearArr = formattedContents.slice(1).map((contentInYear) => {
+    const splitedContent = contentInYear.split(':');
+
+    const year = splitedContent[0];
+    const content = splitedContent[1].trim();
+
+    return { year, content };
+  });
+
+  res.render('zodiac', { zodiac, content, contentInYearArr });
 })
 
 router.get('/mild', function(req, res, next) {

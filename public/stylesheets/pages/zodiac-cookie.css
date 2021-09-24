@@ -4,3 +4,23 @@
     --cookie-color : yellow;
     --main-color : yellow;
 }
+
+#zodiac__dialog {
+    width: 60%;
+}
+
+#zodiac__dialog > p {
+    margin: 20px;
+}
+
+dialog > .content {
+    margin-bottom: 30px;
+}
+
+dialog > .content-in-year > .year{
+    font-weight: bold;
+}
+
+dialog > .content-in-year > .content {
+    margin : 10px 0 10px 0;
+}

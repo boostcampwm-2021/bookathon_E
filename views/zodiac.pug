@@ -24,7 +24,11 @@ block content
             form(action="/" method="get")
                 button#return(type="submit") 돌아가기
     dialog(id='zodiac__dialog')
-        p= contents
+        .content= content
+        each val in contentInYearArr
+            .content-in-year 
+                .year= val.year
+                .content= val.content
 
     script(src='/javascripts/zodiac.js')
     
