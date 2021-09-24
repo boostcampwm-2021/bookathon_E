@@ -4,12 +4,22 @@ window.addEventListener('DOMContentLoaded', ()=>{
 
     const submit = document.querySelector('.input-form__submit');
     submit.addEventListener('click', createCookie);
+
+    const textarea = document.querySelector('.input-form__text');
+    textarea.addEventListener('input', (event)=>checkContents(event));
 });
+
+const checkContents = (event)=>{
+    console.log(event.target);
+    console.log(event.currentTarget.value);
+    if (event.currentTarget.value=='') return;
+    document.querySelector('.input-form__submit').classList.remove('disabled');
+}
 
 const createCookie = ()=>{
     const contents = document.querySelector('.input-form__text').value;
     if (contents=='') return;
-    
+
     let type;
     document.querySelectorAll('.input-form__check').forEach(elem=>{
         if(elem.querySelector('input').checked) 

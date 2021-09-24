@@ -11,6 +11,9 @@
     align-items: center;
 }
 
+.disabled{
+    pointer-events: none;
+}
 .relative{
     position: relative;
 }
