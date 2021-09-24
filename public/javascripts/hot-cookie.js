@@ -15,7 +15,8 @@ const fetchFortune = () => {
         .then(response => response.json())
         .then((data) => {
             fortune.innerHTML = data.contents;
-            numbers.innerHTML = 'Lucky numbers : 7';
+            const number = Math.ceil(Math.random() * 44) + 1;
+            numbers.innerHTML = `Lucky numbers : ${number}`;
         })
 }
 

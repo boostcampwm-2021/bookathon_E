@@ -47,14 +47,18 @@ button#cookie:disabled {
     position: absolute;
     transition: opacity 125ms;
     transition-delay: 375ms;
+    width: 48%;
+    height: 10%;
+    line-height: 20px;
+    font-size: 18px;
 }
 
 #flip.back::before {
-    content: 'Tap here to see front';
+    content: '앞면을 보려면 여기를 탭하세요.';
 }
 
 #flip.front::before {
-    content: 'Tap here to see back';
+    content: '뒷면을 보려면 여기를 탭하세요.';
 }
 
 .clear.open #flip {
