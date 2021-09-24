@@ -8,6 +8,7 @@ const paper = document.body.querySelector('.paper-wrapper');
 const speed = 500;
 
 const cookieSound = document.getElementById('cookie-sound');
+const swipeSound = document.getElementById('swipe-sound');
 
 // Todo : fetch 사용해서 랜덤으로 말 뽑아오면 됨
 const fetchFortune = () => {
@@ -32,7 +33,7 @@ cookie.addEventListener('click', function() {
   if(cookieSound.paused) {
     cookieSound.play();
   }
-})
+});
 
 flip.addEventListener('click', e => {
   paper.classList.toggle('flip');
@@ -42,6 +43,7 @@ flip.addEventListener('click', e => {
 
 getNew.addEventListener('click', e => {
   cookieWrapper.classList.add('clear');
+  swipeSound.play();
   window.setTimeout(() => {
     paper.classList.remove('flip');
     flip.className = 'small front';
