@@ -6,19 +6,21 @@
     "start": "nodemon ./bin/www"
   },
   "dependencies": {
+    "axios": "^0.21.4",
     "body-parser": "^1.19.0",
+    "cheerio": "^1.0.0-rc.10",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
+    "iconv-lite": "^0.6.3",
     "morgan": "~1.9.1",
-    "nodemon": "^2.0.12",
     "nedb": "^1.8.0",
+    "nodemon": "^2.0.12",
     "pug": "^3.0.2"
   },
   "description": "![img](https://img.shields.io/badge/Express--orange) ![project_start_date](https://img.shields.io/badge/Dedate%20Start%20Date-2021--09--23-informational.svg)",
   "main": "app.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/boostcampwm-2021/bookathon_E.git"

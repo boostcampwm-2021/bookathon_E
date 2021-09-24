@@ -1,6 +1,7 @@
 const OvenDB = require('../model/db.js');
 const express = require('express');
 const router = express.Router();
+const crawling = require('../crawling');
 
 router.get('/read/1', function(req, res, next) {
     OvenDB.find({ type: 1 }, function (err, newDoc) {
@@ -37,6 +38,11 @@ router.post('/add', function(req, res, next) {
     } catch (e) {
         res.json({message: 'fail'});
     }
+});
+
+router.get('/fortune', async function(req, res, nex){
+    const data = await crawling(req.query.zodiac);
+    res.json(data);
 });
 
 module.exports = router;
