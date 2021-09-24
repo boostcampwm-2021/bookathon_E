@@ -7,6 +7,8 @@ const numbers = document.body.querySelector('.numbers');
 const paper = document.body.querySelector('.paper-wrapper');
 const speed = 500;
 
+const cookieSound = document.getElementById('cookie-sound');
+
 // Todo : fetch 사용해서 랜덤으로 말 뽑아오면 됨
 const fetchFortune = () => {
     fetch('./ovenapi/read-one-random/2')
@@ -25,6 +27,11 @@ const showFortune = () => {
 fetchFortune();
 
 cookie.addEventListener('click', showFortune, false);
+cookie.addEventListener('click', function() {
+  if(cookieSound.paused) {
+    cookieSound.play();
+  }
+})
 
 flip.addEventListener('click', e => {
   paper.classList.toggle('flip');
