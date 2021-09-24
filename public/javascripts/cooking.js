@@ -12,8 +12,10 @@ window.addEventListener('DOMContentLoaded', ()=>{
 const checkContents = (event)=>{
     console.log(event.target);
     console.log(event.currentTarget.value);
-    if (event.currentTarget.value=='') return;
-    document.querySelector('.input-form__submit').classList.remove('disabled');
+    if (event.currentTarget.value=='') 
+        document.querySelector('.input-form__submit').classList.add('disabled');
+    else
+        document.querySelector('.input-form__submit').classList.remove('disabled');
 }
 
 const createCookie = ()=>{
