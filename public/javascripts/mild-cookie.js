@@ -9,7 +9,7 @@ const speed = 500;
 
 // Todo : fetch 사용해서 랜덤으로 말 뽑아오면 됨
 const fetchFortune = () => {
-    fetch('http://localhost:3000/ovenapi/read-one-random/1')
+    fetch('./ovenapi/read-one-random/1')
         .then(response => response.json())
         .then((data) => {
             fortune.innerHTML = data.contents;
