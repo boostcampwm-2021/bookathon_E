@@ -9,16 +9,17 @@
     text-align: center;
     align-items: center;
     height: 100%;
-    margin-top: 100px;
+    margin-top: 20px;
+    font-family: "swgi";
 }
 .cookie__body .title {
     font-size: 35px;
     font-weight: 600;
 }
 .cookie__body .sub-title {
-    margin-top: 10px;
+    margin-top: 20px;
     font-size: 22px;
-    padding-bottom: 25px;
+    padding-bottom: 50px;
 }
 .button-wrapper {
     display: flex;
@@ -34,11 +35,16 @@ button#cookie {
     background: none;
     border: transparent;
     cursor: pointer;
-    font-family: 'Noto Serif', serif;
 }
 
 button#cookie:disabled {
     cursor: default;
+}
+
+button#new,
+button#return {
+    font-family: "swgi";
+    font-weight: 500;
 }
 
 #flip {
@@ -51,6 +57,7 @@ button#cookie:disabled {
     height: 10%;
     line-height: 20px;
     font-size: 18px;
+    
 }
 
 #flip.back::before {
