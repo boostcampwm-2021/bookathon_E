@@ -4,6 +4,9 @@
 
 > bookathon E조 레포지토리입니다.
 
+
+[맛좀볼래 배포사이트](http://want-some-taste.o-r.kr:3000/)
+
 ## 🥕 팀원 구성
 
 | J190   | J078   | J125  | J102   | 
@@ -12,7 +15,8 @@
 
 ![image (7)](https://user-images.githubusercontent.com/69030160/134611560-ec17886d-3b89-4210-98ff-d5ffdd8561da.png)
 
-## 👨‍👧‍👦 작업 결과 
+## 👨‍👧‍👦 작업 결과
+
 ![맛좀볼래 결과3](https://user-images.githubusercontent.com/69030160/134624111-e77c8b8d-b3aa-4bb2-9bf5-cfab404b4a35.gif)
 
 ## 🥟 세줄 기획
