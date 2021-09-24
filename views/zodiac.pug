@@ -6,7 +6,8 @@ block css
 block content
     .cookie__body
         .title
-            h1 오늘의 운세
+            - const zodiacMap = { 'mouse' : '쥐', 'cow' : '소', 'tiger' : '호랑이', 'rabbit' : '토끼', 'dragon' : '용', 'snake' : '뱀', 'horse' : '말', 'sheep' : '양', 'monkey' : '원숭이', 'hen' : '닭', 'dog' : '개', 'pig' : '돼지'};
+            h1 오늘의 운세 #{zodiacMap[zodiac]}띠
         .sub-title
             small 쿠키를 클릭 해주세요
         #fortuneCookie
@@ -15,13 +16,15 @@ block content
                 .cookie
                 .paper-wrapper
                     .paper
-                        .fortune= contents
+                        .fortune
                         .numbers
             button(type="button")#flip.front.small
         audio(id='cookie-sound' src="/sounds/cookie.mp3") 
         .button-wrapper
             form(action="/" method="get")
                 button#return(type="submit") 돌아가기
+    dialog(id='zodiac__dialog')
+        p= contents
 
     script(src='/javascripts/zodiac.js')
     
