@@ -64,6 +64,7 @@ bookathon E조 디자인 기획 링크 : [Go to Link](https://www.figma.com/file
 ## 📃 패치노트 
 
 [v0.0.0](https://github.com/boostcampwm-2021/bookathon_E/wiki/%EB%A7%9B%EC%A2%80-%EB%B3%BC%EB%9E%98%3F!-%ED%8C%A8%EC%B9%98%EB%85%B8%ED%8A%B8-v0.0.0)
+
 [v0.0.1](https://github.com/boostcampwm-2021/bookathon_E/wiki/%EB%A7%9B%EC%A2%80-%EB%B3%BC%EB%9E%98%3F!-%ED%8C%A8%EC%B9%98%EB%85%B8%ED%8A%B8-v0.0.1)
 
 ## 📃 API 문서
