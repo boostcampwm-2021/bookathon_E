@@ -96,7 +96,7 @@ input[type="checkbox"]:checked + label span {
     width: 90%;
     height: 700px;
     position: absolute;
-    top: 150px;
+    top: 100px;
     background-color: #FFFFFF;
     background-image: url('../../images/oven.jpg');
     background-size: contain;
