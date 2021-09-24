@@ -1,5 +1,8 @@
 extends layout    
 
+block css 
+    link(rel="stylesheet", href="/stylesheets/pages/zodiac-cookie.css")
+
 block content
     .cookie__body
         .title
@@ -12,10 +15,12 @@ block content
                 .cookie
                 .paper-wrapper
                     .paper
-                        .fortune #{contents}
+                        .fortune ${contents}
                         .numbers
             button(type="button")#flip.front.small
         .button-wrapper
             form(action="/" method="get")
                 button#return(type="submit") 돌아가기
+
     script(src='/javascripts/zodiac.js')
+    

@@ -1,0 +1,6 @@
+@import './cookie.css';
+
+:root {
+    --cookie-color : yellow;
+    --main-color : yellow;
+}
