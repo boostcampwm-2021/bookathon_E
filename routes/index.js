@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const crawling = require('../crawling');
 
-// 1:쥐띠 2:소띠 3:호랑이띠 4:토끼띠 5:용띠 6:뱀띠 7:말띠 8:양띠 9:원숭이띠 10:닭띠 11:개띠 12:돼지띠
 const zodiacObj = {
   'mouse' : 1, 
   'cow' : 2, 
@@ -18,7 +17,6 @@ const zodiacObj = {
   'pig' : 12
 }
 
-/* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index');
 });
@@ -31,7 +29,6 @@ router.get('/fortune/:zodiac', async function(req, res, next) {
   const zodiac = req.params.zodiac;
 
   const zodiacNum = zodiacObj[zodiac];
-  // 띠 별 운세를 가져옴
   let contents = await crawling(zodiacNum);
 
   const formattedContents = [];

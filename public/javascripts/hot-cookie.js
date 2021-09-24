@@ -10,7 +10,6 @@ const speed = 500;
 const cookieSound = document.getElementById('cookie-sound');
 const swipeSound = document.getElementById('swipe-sound');
 
-// Todo : fetch 사용해서 랜덤으로 말 뽑아오면 됨
 const fetchFortune = () => {
     fetch('./ovenapi/read-one-random/2')
         .then(response => response.json())
