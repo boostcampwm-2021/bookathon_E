@@ -10,6 +10,9 @@
 | :------: | :------: | :------: | :------: |
 | 정현구 | 민수빈 | 오석호 | 설민욱 |
 
+![image (7)](https://user-images.githubusercontent.com/69030160/134611560-ec17886d-3b89-4210-98ff-d5ffdd8561da.png)
+
+
 ## 🥟 세줄 기획
 
 그냥 다른사람에게 아무런 말이나 하고싶고, 아무런 말이나 듣고싶은 날을 위한 포춘쿠키 웹페이지이다!
@@ -45,3 +48,7 @@
 bookathon E조 개발 기획 링크 : [Go to Link](https://onyx-knee-40f.notion.site/2e86f7fa734f4427987479b7238ae763)
 
 bookathon E조 디자인 기획 링크 : [Go to Link](https://www.figma.com/file/Gl4bE7UHwQ3yyRqFtnusaI/)
+
+## 📃 패치노트 
+
+[v0.0.0](https://github.com/boostcampwm-2021/bookathon_E/wiki/%EB%A7%9B%EC%A2%80-%EB%B3%BC%EB%9E%98%3F!-%ED%8C%A8%EC%B9%98%EB%85%B8%ED%8A%B8-v0.0.0)
