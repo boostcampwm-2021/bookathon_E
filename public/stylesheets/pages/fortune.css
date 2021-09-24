@@ -1,20 +1,20 @@
 .fortune__title {
     position: absolute;
     top: 250px;
-    font-size: 50px;
+    font-size: 35px;
     font-weight: 600;
     font-family: "swgi";
 }
 
 .fortune__subtitle {
     position: absolute;
-    top: 350px;
-    font-size: 25px;
+    top: 320px;
+    font-size: 22px;
     font-family: "swgi";
 }
 
 .fortune__body {
-    margin-top: 200px;
+    margin-top: 170px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
 }
@@ -22,7 +22,6 @@
 .fortune__body > div {
     display: flex;
     justify-content: center;
-
     margin-top: 40px;
 }
 
