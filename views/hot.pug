@@ -1,5 +1,8 @@
 extends layout    
 
+block css 
+    link(rel="stylesheet", href="/stylesheets/pages/hot-cookie.css")
+
 block content
     .cookie__body
         .title
@@ -19,4 +22,4 @@ block content
             button#new(type="button") 새로 뽑기
             form(action="/" method="get")
                 button#return(type="submit") 돌아가기
-    script(src='javascripts/hot-cookie.js')
+    script(src='/javascripts/hot-cookie.js')
