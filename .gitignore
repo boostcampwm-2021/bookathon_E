@@ -1,3 +1,7 @@
+# sample DB
+oven.db
+sample-data/
+
 # Logs
 logs
 *.log
@@ -103,3 +107,4 @@ dist
 # TernJS port file
 .tern-port
 .idea
+

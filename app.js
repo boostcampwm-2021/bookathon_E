@@ -23,9 +23,6 @@ app.use(bodyParser.json());
 app.use('/', indexRouter);
 app.use('/ovenapi', ovenRouter);
 
-// 초기화 후, 샘플 데이터 추가
-addSampleData();
-
 app.use(function(req, res, next) {
   next(createError(404));
 });
