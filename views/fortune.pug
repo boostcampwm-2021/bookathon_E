@@ -4,7 +4,5 @@ block content
     .fortune__body
         each val, index in ['mouse', 'cow', 'tiger', 'rabbit', 'dragon', 'snake', 'horse', 'sheep', 'monkey', 'hen', 'dog', 'pig']
             .zodiac__wrapper
-                <a href='http://localhost:3000/today-fortune/#{val}'>
-                    <img src='/images/zodiac/#{val}.jpg' alt="#{val}">
-                </a>
-                
+                a(href=`./fortune/${val}`)
+                    img(src=`/images/zodiac/${val}.jpg`)

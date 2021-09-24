@@ -10,7 +10,7 @@ router.get('/fortune', function(req, res, next) {
   res.render('fortune');
 });
 
-router.get('/today-fortune/:zodiac', function(req, res, next) {
+router.get('/fortune/:zodiac', function(req, res, next) {
   const zodiac = req.params.zodiac;
 
   // 띠 별 운세를 가져옴
