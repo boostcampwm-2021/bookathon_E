@@ -3,6 +3,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
+}
+
+.cooking__title{
+    font-family:"swgi";
+    font-size:35px;
+    font-weight:600;
+}
+
+.cooking__subtitle {
+    font-family:"swgi";
+    margin-top: 20px;
+    font-size: 22px;
+    padding-bottom: 30px;
 }
 
 .flex__horizon{
@@ -34,14 +48,14 @@ button{
 }
 
 .margin6{
-    margin-top: 6%;
+    margin-top: 5%;
 }
 .margin7{
-    margin-top: 7%;
+    margin-top: 5%;
 }
+
 .input-form__font-size{
     font-size: 30px;
-    font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 .input-form{
@@ -54,6 +68,7 @@ button{
     margin-right: 100px;
     width: 170px;
     height: 30px;
+    font-family: "swgi";
 }
 
 .input-form__check input[type="checkbox"] {
@@ -87,6 +102,13 @@ input[type="checkbox"]:checked + label span {
     height: 75px;
     border-radius: 50px;
     margin-top: 30px;
+    font-family: "swgi";
+}
+
+.input-form__submit:hover{
+    background-color: #C09F80;
+    cursor: pointer;
+    transition: all .35s;
 }
 
 .input-form__text{
@@ -99,7 +121,7 @@ input[type="checkbox"]:checked + label span {
     width: 90%;
     height: 700px;
     position: absolute;
-    top: 100px;
+    top: 150px;
     background-color: #FFFFFF;
     background-image: url('../../images/oven.jpg');
     background-size: contain;
@@ -126,9 +148,15 @@ input[type="checkbox"]:checked + label span {
     text-align: center;
 }
 
+.input-form__result__button:hover{
+    background-color: #C09F80;
+    transition: all .35s;
+}
+
 .input-form__result__back{
     width: 400px;
     height: 100px;
+    font-family: "swgi";
 }
 
 .hidden{

@@ -1,6 +1,10 @@
 extends layout
 
 block content 
+    .fortune__title
+        p 오늘의 운세
+    .fortune__subtitle
+        p 어이 거기 자네, 운세 한 번 볼텨?
     .fortune__body
         each val, index in ['mouse', 'cow', 'tiger', 'rabbit', 'dragon', 'snake', 'horse', 'sheep', 'monkey', 'hen', 'dog', 'pig']
             .zodiac__wrapper
