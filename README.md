@@ -3,9 +3,24 @@
 ![img](https://img.shields.io/badge/Express--orange) ![project_start_date](https://img.shields.io/badge/Dedate%20Start%20Date-2021--09--23-informational.svg)
 
 > bookathon E조 레포지토리입니다.
+> 
+> nCloud micro server를 통해서 배포중입니다.
 
+#### 👉 [맛좀볼래?! 서비스 맛 보러 이동하기](http://want-some-taste.o-r.kr/)
 
-[맛좀볼래 배포사이트](http://want-some-taste.o-r.kr:3000/)
+## ⚒ 기술 스택
+<div>
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=white"/>
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white"/>
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Pug-A86454?style=flat-square&logo=Pug&logoColor=white"/>
+  <img src="https://img.shields.io/badge/NCloud-03C75A?style=flat-square&logo=naver&logoColor=white"/>
+  <img src="https://img.shields.io/badge/NGINX-009639?style=flat-square&logo=nginx&logoColor=white"/>
+  <img src="https://img.shields.io/badge/neDB-41454A?style=flat-square&logo=nedb&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Notion-000000?style=flat-square&logo=Notion&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=Figma&logoColor=white"/>
+</div>
 
 ## 🥕 팀원 구성
 
@@ -19,7 +34,7 @@
 
 ![맛좀볼래 결과3](https://user-images.githubusercontent.com/69030160/134624111-e77c8b8d-b3aa-4bb2-9bf5-cfab404b4a35.gif)
 
-## 🥇 수상
+## 🥇 감동적인 1등 수상
 
 ![맛좀볼래 수상](https://user-images.githubusercontent.com/14370441/135716121-fab6952e-be3b-4008-b090-a9ac1ca24fc7.png)
 
