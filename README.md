@@ -2,11 +2,13 @@
 
 ![img](https://img.shields.io/badge/Express--orange) ![project_start_date](https://img.shields.io/badge/Dedate%20Start%20Date-2021--09--23-informational.svg)
 
-> bookathon E조 레포지토리입니다.
+> 포춘쿠키를 모티브로 만든 맛좀볼래?! 사이트를 구현한 bookathon E조의 레포지토리입니다.
+>
+> Vanilla JS와 Express, nedb를 이용해서 구현했습니다!
 > 
-> nCloud micro server를 통해서 배포중입니다.
+> nCloud micro server를 통해서 배포중입니다. (현재 배포를 중지했습니다!)
 
-#### 👉 [맛좀볼래?! 서비스 맛 보러 이동하기](http://want-some-taste.o-r.kr/)
+#### 👉 [맛좀볼래?! 서비스 맛 보러 이동하기](http://want-some-taste.o-r.kr/) 
 
 ## ⚒ 기술 스택
 <div>
